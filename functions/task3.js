@@ -1,8 +1,10 @@
-const counter = ( num ) => {
+const countDown = ( num ) => {
     console.log( num )
-    if (num <= 0) {
+    if (num <= 1) {
         return
     }
-    counter(num - 1)
+    countDown(num - 1)
 }
-counter(5);
+countDown(5);
+
+

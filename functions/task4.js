@@ -2,14 +2,14 @@ function divide ( numerator, denominator ) {
         try {
             if ( typeof numerator !== 'number' || typeof denominator !== 'number' ) {
                 throw new Error ( 'All arguments should be a number' );
-            } else if ( denominator === 0 ) {
-                throw new Error ( 'Impossible to divide on 0' );
-            } else {
-                let result = numerator / denominator;
-                return result;
             }
+            if ( denominator === 0 ) {
+                throw new Error ( 'Impossible to divide on 0' );
+            }
+            return numerator / denominator;
         } catch ( error ) {
-            return error.message;
+            console.log( error.message )
+            return null;
         } finally {
             console.log ( 'Робота завершена' );
         }
