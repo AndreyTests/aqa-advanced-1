@@ -4,10 +4,10 @@ const users = [
     {name : "Daniel", email : "daniel@gmail.com", age : 32}
 ]
 
-for (const newUser of users) {
-    const { name, email, age } = users;
+for (const user of users) {
+    const { name, email, age } = user;
 
-    console.log("newName:", newUser.name);
-    console.log("newEmail:", newUser.email);
-    console.log("newAge:", newUser.age);
+    console.log("newName:", user.name);
+    console.log("newEmail:", user.email);
+    console.log("newAge:", user.age);
 }
